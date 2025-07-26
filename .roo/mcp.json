@@ -1,0 +1,84 @@
+{
+  "mcpServers": {
+    "fetch": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch"
+      ],
+      "env": {},
+      "disabled": false,
+      "autoApprove": [
+        "fetch"
+      ],
+      "alwaysAllow": [
+        "fetch"
+      ]
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/Sean/Desktop",
+        "/code"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "usehooks": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-usehooks"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "build-my-own": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "build-my-own"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "concurrent-browser-mcp": {
+      "command": "npx",
+      "args": [
+        "concurrent-browser-mcp",
+        "--max-instances",
+        "20"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "octocode": {
+      "command": "npx",
+      "args": [
+        "octocode-mcp"
+      ],
+      "disabled": false,
+      "autoApprove": [
+        "packageSearch"
+      ]
+    },
+    "message-mcp": {
+      "command": "npx",
+      "args": [
+        "message-mcp@latest"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
